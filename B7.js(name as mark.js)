@@ -1,0 +1,63 @@
+function Calculate()
+{
+    var m1=document.getElementById("m1").value;
+    var str=" ";
+    var flag=0;
+    if(m1>=0 && m1<=100)
+    {
+        if(m1>=90)
+        str="S+";
+        else if(m1>=80)
+            str="S";
+        else if(m1>=70)
+            str="A";
+        else if(m1>=60)
+            str="B";
+        else if(m1>=50)
+            str="C";
+        else if(m1>=40)
+            str="D";
+        else
+            str="Fail";
+        document.getElementById("grade").innerHTML=str;
+    }
+    else
+    {
+        alert("Invalid Input");
+        flag=1;
+    }
+    var m2=document.getElementById("m2").value;
+    var st=" ";
+    var flag=0;
+    if(m2>=0 && m2<=100)
+    {
+        if(m2>=90)
+        st="S+";
+        else if(m2>=80)
+            st="S";
+        else if(m2>=70)
+            st="A";
+        else if(m2>=60)
+            st="B";
+        else if(m2>=50)
+            st="C";
+        else if(m2>=40)
+            st="D";
+        else
+            st="Fail";
+        document.getElementById("grade1").innerHTML=st;
+    }
+    else
+    {
+        alert("Invalid Input");
+        flag=1;
+    }
+    if(flag==0)
+    {
+        var sum=0;
+        sum=parseInt(m1)+parseInt(m2);
+        document.getElementById("sum").innerHTML="Total marks from 200 is " + sum;
+    }
+    
+
+}
