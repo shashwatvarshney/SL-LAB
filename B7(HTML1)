@@ -1,0 +1,24 @@
+html file:
+<!DOCTYPE html>
+<html>
+<head style="color:blue">
+  Student Marks Card
+  <script src="mark.js"></script>
+</head>
+<body>
+    <p style="color:red">
+        Please Enter the marks of your subjects
+    </p>
+    <form>
+        <fieldset>
+            <legend>Subject Marks</legend>
+            <input type="number" placeholder="subject1" id="m1" required="value"><br>
+            Grade:<span id="grade"></span><br>
+            <input type="number" placeholder="subject2" id="m2" required="value"><br>
+            Grade:<span id="grade1"></span><br>
+            <input type="button" onClick="Calculate()" value="check" /><br>
+            <span id="sum"></span>
+        </fieldset> 
+    </form>
+</body>
+</html>
