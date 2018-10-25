@@ -1,0 +1,36 @@
+user_input_list=[int(input('Enter the {} element'.format(i+1))) for i in range(5)]
+
+unique_elements=set(user_input_list)
+
+print('user input',user_input_list)
+print('unique elemetns',unique_elements)
+
+odd_numbers_list=[i for i in range(10) if i%2==0]
+reversed_odd_numbers_list=reversed(odd_numbers_list)
+
+print(odd_numbers_list)
+print(list(reversed_odd_numbers_list))
+
+
+
+words=dict()
+with open('myfile.txt','rb') as file:
+    for word in (word for line in file for word in line.split()):
+        if word in words:
+            words[word]+=1
+        else:
+            words[word]=1
+
+words=dict(sorted(words.items(),key=lambda x:x[1],reverse=True))
+print(words)
+
+
+
+def cus_rec(i,lis):
+    if i==len(lis)-1:
+        return lis[i]
+    else:
+        from_future=cus_rec(i+1,lis)
+        return  lis[i] if lis[i]>from_future else from_future
+
+print(cus_rec(0,[int(input('Please enter {} the number'.format(i+1))) for i in range(5)]))
