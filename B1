@@ -33,4 +33,4 @@ def cus_rec(i,lis):
         from_future=cus_rec(i+1,lis)
         return  lis[i] if lis[i]>from_future else from_future
 
-print(cus_rec(0,[int(input('Please enter {} the number'.format(i+1))) for i in range(5)])))
+print(cus_rec(0,[int(input('Please enter {} the number'.format(i+1))) for i in range(5)]))
