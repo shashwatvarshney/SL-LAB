@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<table>
+  <tr id="menu">
+  <th id= "car1">CAR1</th>
+  <th id= "car2">CAR2</th>
+  </tr>
+</table>
+<table class="table" id="MenuTable" hidden>
+  <tr><td id="item1"></td><td id="item2"</td><td id="item3"</td></tr>
+</table>
+<script type="text/javascript" src="json.js" ></script>
+</body>
+<style>
+  table {
+    text-align: center;
+    width: 100%;
+  }
+  td {
+      font-size: xx-large;
+  }
+  th {
+    font-size: x-large;
+    background-color: #4CAF50;
+    color: white;
+  }
+  th:hover {
+    background-color: #8B008B;
+     }
+</style>
+</html>
