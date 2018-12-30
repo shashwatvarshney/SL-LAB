@@ -1,0 +1,30 @@
+a=input("Enter the 1st string\n")
+b=input("Enter the 2nd string\n")
+c=input("Enter the 3rd string\n")
+d=input("Enter the 4th string\n")
+mystrings=[a,b,c,d]
+print(mystrings)
+a=len(mystrings)
+
+for i in range(a):
+	if i%2==0:
+		print("At index", i ,mystrings[i])
+
+for i in range(a):
+        if i!=0:
+            if i%2==0:
+                mystrings[i]=mystrings[i].upper()
+                
+print(mystrings)
+
+for i in range(a):
+	mystrings[i]=" ".join(reversed(mystrings[i].split()))
+print("On reversal",mystrings)
+
+num=[]
+for i in range(a):
+	for s in mystrings[i].split():
+		 if s.isdigit():
+		 	num.append(s)
+		 	
+print(num)
